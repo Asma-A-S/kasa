@@ -13,7 +13,7 @@ function Header() {
           Accueil
         </NavLink>
         <NavLink to="/about" className="nav_link">
-          A propos
+          <span className="span">A propos</span>
         </NavLink>
       </nav>
     </header>

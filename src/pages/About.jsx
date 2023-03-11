@@ -1,12 +1,12 @@
 import Banner from '../components/Banner'
-import image from '../assets/BANNER.png'
+//import image from '../assets/BANNER.png'
 import Collapse from '../components/Collapse'
 import dropDown from '../data/dropDown.json'
 import '../styles/about.css'
 function About() {
   return (
     <div className="About">
-      <Banner image={image} />
+      <Banner className="banner_about" origin="About" />
       <div className="Dropdown">
         {dropDown.map(({ title, description }, index) => (
           <Collapse
