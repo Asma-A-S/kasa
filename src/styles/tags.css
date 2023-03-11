@@ -1,0 +1,20 @@
+.tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.tag{
+    background: rgba(255, 96, 96, 1);
+    color:white;
+    border-radius: 10px;
+    width: 115px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 23px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
