@@ -8,11 +8,9 @@ function Rating({ rating }) {
     <img src={grey_star} alt="Empty Star" className="greyStar" />
   )
   return (
-    <div>
+    <div className="ratingStars">
       {stars.map((star) => (
-        <span key={star} className="ratingStars">
-          {star <= rating ? fullStar : emptyStar}
-        </span>
+        <span key={star}>{star <= rating ? fullStar : emptyStar}</span>
       ))}
     </div>
   )
