@@ -31,6 +31,7 @@
         margin-top: 30px;
     }
     .gallery{
+        margin-top: 0;
         background-color: transparent;
     }
     .gallery_card{

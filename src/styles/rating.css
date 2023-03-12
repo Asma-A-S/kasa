@@ -1,3 +1,7 @@
 .redStar, .greyStar{
     margin-right: 5px;
 }
+.ratingStars{
+    display: flex;
+    flex-direction: row;
+}

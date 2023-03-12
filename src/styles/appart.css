@@ -85,10 +85,15 @@
         flex-direction: row-reverse;
         align-items: center;
     }
+    .rating{
+        display: flex;
+        flex-direction: row;
+    }
     .appart_collapse{
         flex-direction: column;
         
     }
+    
     .appart_collapse_child{
         width: 100%;
         margin-bottom: 20px;
