@@ -6,7 +6,7 @@ import '../styles/about.css'
 function About() {
   return (
     <div className="About">
-      <Banner className="banner_about" origin="About" />
+      <Banner />
       <div className="Dropdown">
         {dropDown.map(({ title, description }, index) => (
           <Collapse

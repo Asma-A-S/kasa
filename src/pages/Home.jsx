@@ -9,11 +9,7 @@ import data from '../data/data.json'
 function Home() {
   return (
     <div className="home">
-      <Banner
-        className="banner"
-        origin="Home"
-        texte="Chez vous, partout et ailleurs"
-      />
+      <Banner texte="Chez vous, partout et ailleurs" />
       <section className="gallery">
         {data.map(({ id, cover, title }) => (
           <div className="gallery_card" key={id}>
