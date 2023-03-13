@@ -9,9 +9,7 @@ import '../styles/appart.css'
 
 function Appart() {
   const { id } = useParams()
-
   const appart = data.find((appart) => appart.id === id)
-
   if (!appart) {
     return <Navigate to="/error" />
   }
@@ -26,6 +24,8 @@ function Appart() {
     description,
     pictures,
   } = appart
+  //séparer nom et prénom host
+  const name = host.name.split(' ')
 
   const equipment = equipments.map((equipment, index) => (
     <li key={index}>{equipment}</li>
@@ -36,7 +36,7 @@ function Appart() {
       <Slider slides={pictures} className="slider" />
       <div className="information">
         <div className="title_tags">
-          <div className="about_appart">
+          <div>
             <h1 className="appart_title">{title}</h1>
             <p className="appart_location">{location}</p>
           </div>
@@ -46,7 +46,10 @@ function Appart() {
         </div>
         <div className="host_rating">
           <div className="host">
-            <p className="host_name">{host.name}</p>
+            <div className="host_name">
+              <span className="host_lastname">{name[0]}</span>
+              <span className="host_firstname">{name[1]}</span>
+            </div>
             <img src={host.picture} alt="" className="host_picture" />
           </div>
           <div className="rating">
