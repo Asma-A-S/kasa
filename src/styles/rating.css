@@ -1,7 +1,16 @@
 .redStar, .greyStar{
     margin-right: 5px;
+    width: 30px;
+    height: 30px;
 }
 .ratingStars{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 768px){
+    .redStar, .greyStar{
+        width: 15px;
+        height: 15px;
+    }
 }

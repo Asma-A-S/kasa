@@ -18,5 +18,10 @@
 @media screen and (max-width: 768px){
     .footer{
         margin-top: 0;
+        justify-content: center;
+    }
+    .footer_texte{
+        font-size: 12px;
+        margin-top: 0;
     }
 }

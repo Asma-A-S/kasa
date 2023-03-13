@@ -17,4 +17,10 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    line-height: 19.96px
+}
+@media screen and (max-width: 768px){
+    .tag{
+        font-size: 10px;
+    }
 }
