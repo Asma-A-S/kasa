@@ -1,18 +1,25 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom-v5-compat'
+import banner_about from '../assets/bannerAbout.png'
+import banner_home from '../assets/BANNER.png'
 import '../styles/banner.css'
-function Banner({ origin, texte }) {
-  if (origin === 'Home') {
-    return (
-      <div className="banner banner_home">
-        {<h1 className="banner_texte">{texte}</h1>}
-      </div>
-    )
-  }
-  if (origin === 'About') {
-    return <div className="banner banner_about"></div>
-  } else {
-    return null
-  }
+function Banner({ texte }) {
+  const location = useLocation()
+  console.log(location)
+  return (
+    <div
+      className={`banner ${
+        location.pathname !== '/about' ? 'banner_home' : ''
+      }`}
+    >
+      <img
+        className="banner_img"
+        src={location.pathname === '/about' ? banner_about : banner_home}
+        alt="bannière"
+      />
+      <div className="background"></div>
+      <h1 className="banner_texte">{texte}</h1>
+    </div>
+  )
 }
 export default Banner
-//<img className="banner_img" src={image} alt="bannière" />
