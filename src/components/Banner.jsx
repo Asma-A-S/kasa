@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom-v5-compat'
-import banner_about from '../assets/bannerAbout.png'
+import banner_about from '../assets/about.png'
 import banner_home from '../assets/BANNER.png'
 import '../styles/banner.css'
 function Banner({ texte }) {

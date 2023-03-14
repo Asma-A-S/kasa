@@ -7,8 +7,5 @@ function Cards({ cover, title }) {
       <h2 className="card_title">{title}</h2>
     </div>
   )
-  //const [apparts, setApparts]
-  //const cards = data.map(({id, cover, title}) =>
-  //
 }
 export default Cards
